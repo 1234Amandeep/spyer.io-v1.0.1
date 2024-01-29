@@ -27,10 +27,10 @@ export default function Searchbar() {
   };
 
   const getPlayerProfile = async (queryName) => {
-    // https://spyer-io-api.onrender.com/fetch/${queryName}
+    //
 
     try {
-      fetch(`http://localhost:3000/fetch/${queryName}`)
+      fetch(`https://spyer-io-api-v1-0-1.onrender.com/fetch/${queryName}`)
         .then((response) => response.json())
         .then(({ data }) => {
           if (!data) {

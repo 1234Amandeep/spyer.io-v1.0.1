@@ -19,7 +19,7 @@ export default function ListItem({ item }) {
       // remove from db
       const res = await fetch(
         // https://spyer-io-api.onrender.com/removeFromWishlist
-        `http://localhost:3000/removeFromWishlist`,
+        `https://spyer-io-api-v1-0-1.onrender.com/removeFromWishlist`,
         {
           method: "POST",
           credentials: "include",
