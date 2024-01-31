@@ -11,7 +11,7 @@ export default function Root() {
 
   useEffect(() => {
     // https://spyer-io-api.onrender.com/root
-    fetch("https://spyer-io-api-v1-0-1.onrender.com/root", {
+    fetch("api/root", {
       method: "GET",
       credentials: "include",
       headers: {
