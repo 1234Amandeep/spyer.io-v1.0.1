@@ -12,7 +12,8 @@ export default function Navbar() {
   // handle logout
   const handleLogout = async () => {
     // https://spyer-io-api.onrender.com/logout
-    const res = await fetch("https://spyer-io-api-v1-0-1.onrender.com/logout", {
+    const res = await fetch("/api/logout", {
+      // const res = await fetch("https://spyer-io-api-v1-0-1.onrender.com/logout", {
       method: "GET",
       credentials: "include",
     });
