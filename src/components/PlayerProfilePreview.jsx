@@ -34,10 +34,8 @@ export default function PlayerProfilePreview() {
 
       // adding to db
       if (user) {
-        // https://spyer-io-api.onrender.com/addToWishlist
         const res = await fetch(
-          "/api/addToWishlist",
-          // "https://spyer-io-api-v1-0-1.onrender.com/addToWishlist",
+          "https://spyer-io-api-v1-0-1.onrender.com/addToWishlist",
           {
             method: "POST",
             body: JSON.stringify({ favList: [...favList, playerProfile] }),

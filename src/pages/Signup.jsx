@@ -29,9 +29,7 @@ export default function Signup() {
     console.log(favList);
 
     // sending user cred. to server
-    // https://spyer-io-api.onrender.com/signup
-    const res = await fetch("/api/signup", {
-      // const res = await fetch("https://spyer-io-api-v1-0-1.onrender.com/signup", {
+    const res = await fetch("https://spyer-io-api-v1-0-1.onrender.com/signup", {
       method: "POST",
       body: JSON.stringify({ email, password, favList }),
       credentials: "include",

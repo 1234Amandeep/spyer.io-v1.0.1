@@ -24,10 +24,8 @@ export default function Login() {
 
     try {
       // sending user cred. to server
-      // https://spyer-io-api.onrender.com/login
       const res = await fetch(
-        "/api/login",
-        // "https://spyer-io-api-v1-0-1.onrender.com/login",
+        "https://spyer-io-api-v1-0-1.onrender.com/login",
         {
           method: "POST",
           headers: {
