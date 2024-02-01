@@ -9,7 +9,6 @@ export default defineConfig({
       "/api": {
         target: "https://spyer-io-api-v1-0-1.onrender.com",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
   },
