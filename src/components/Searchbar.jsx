@@ -30,7 +30,7 @@ export default function Searchbar() {
     //
 
     try {
-      fetch(`/api/fetch/${queryName}`)
+      fetch(`https://spyer-io-api-v1-0-1.onrender.com/api/fetch/${queryName}`)
         // fetch(`https://spyer-io-api-v1-0-1.onrender.com/fetch/${queryName}`)
         .then((response) => response.json())
         .then(({ data }) => {

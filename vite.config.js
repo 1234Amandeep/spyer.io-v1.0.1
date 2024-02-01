@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api": {
+      "/apii": {
         target: "https://spyer-io-api-v1-0-1.onrender.com",
         changeOrigin: true,
       },
